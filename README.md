@@ -1,3 +1,7 @@
+# 🏃‍♂️‍➡️Fitness Buddy
+
+---
+
 <div align="center">
 
 <!-- BANNER -->
@@ -624,10 +628,10 @@ git push origin feature/amazing-feature
 
 ## 📄 License
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **Apache License** — see the [LICENSE](LICENSE) file for details.
 
 ```
-MIT License — Free to use, modify, and distribute with attribution.
+Apache License — Free to use, modify, and distribute with attribution.
 ```
 
 ---
@@ -636,9 +640,9 @@ MIT License — Free to use, modify, and distribute with attribution.
 
 <div align="center">
 
-**Ashis** — Agentic AI Developer
+**Ashish Raj** — Agentic AI Developer
 
-[![GitHub](https://img.shields.io/badge/GitHub-YOUR__USERNAME-181717?style=for-the-badge&logo=github)](https://github.com/YOUR_USERNAME)
+[![GitHub](https://img.shields.io/badge/GitHub-YOURUSERNAME-181717?style=for-the-badge&logo=github)](https://github.com/ashishraj-hub)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/YOUR_PROFILE)
 
 *Built with ❤️ as part of the IBM Agentic AI Challenge*
@@ -660,7 +664,7 @@ MIT License — Free to use, modify, and distribute with attribution.
 
 **⭐ If this project helped you, please give it a star! It motivates continued development.**
 
-[![Star History](https://img.shields.io/github/stars/YOUR_USERNAME/fitness-buddy?style=social)](https://github.com/YOUR_USERNAME/fitness-buddy)
+[![Star History](https://img.shields.io/github/stars/YOUR_USERNAME/fitness-buddy?style=social)](https://github.com/ashishraj-hub/fitness-buddy)
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
 
