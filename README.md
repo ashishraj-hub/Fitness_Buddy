@@ -18,7 +18,7 @@
 [![Agentic AI](https://img.shields.io/badge/Agentic-AI-00C6A2?style=for-the-badge&logo=openai&logoColor=white)](#)
 [![Granite LLM](https://img.shields.io/badge/Model-IBM%20Granite%203.8B-FF6B35?style=for-the-badge&logo=ibm&logoColor=white)](#)
 [![HTML5](https://img.shields.io/badge/Frontend-HTML5%20%2F%20CSS3%20%2F%20JS-E34F26?style=for-the-badge&logo=html5&logoColor=white)](#)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](#license)
+[![License](https://img.shields.io/badge/License-Apache-2.0-License-green?style=for-the-badge)](#license)
 
 <br/>
 
@@ -32,7 +32,7 @@
 <br/><br/>
 
 <!-- QUICK LINKS -->
-[🚀 Live Demo](#-live-demo) • [📖 Documentation](#-table-of-contents) • [🏗️ Architecture](#️-system-architecture) • [⚡ Quick Start](#-quick-start) • [🤝 Contributing](#-contributing)
+• [📖 Documentation](#-table-of-contents) • [🏗️ Architecture](#️-system-architecture) • [⚡ Quick Start](#-quick-start) • [🤝 Contributing](#-contributing)
 
 </div>
 
@@ -52,7 +52,6 @@
 - [🤖 AI Agent Design](#-ai-agent-design)
 - [💬 Prompt Engineering](#-prompt-engineering)
 - [🧪 Testing](#-testing)
-- [🚀 Deployment](#-deployment)
 - [📸 Screenshots](#-screenshots)
 - [🗺️ Roadmap](#️-roadmap)
 - [🤝 Contributing](#-contributing)
@@ -244,12 +243,7 @@ fitness-buddy/
 ├── 📄 README.md                    # This file
 │
 ├── 🌐 frontend/
-│   ├── fitness-buddy.html          # Main web app (Orchestrate embed)
-│   ├── fitness-buddy-standalone.html  # Standalone (direct watsonx.ai API)
-│   └── assets/
-│       ├── style.css               # Styles (embedded in HTML)
-│       └── favicon.ico
-│
+│   ├── Fitness Buddy.html          # Main web app (Orchestrate embed)
 ├── 🤖 agent/
 │   ├── system-prompt.txt           # Fitness Buddy behavior prompt
 │   ├── skills/
@@ -298,8 +292,8 @@ Before you begin, ensure you have:
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/fitness-buddy.git
-cd fitness-buddy
+git clone https://github.com/ashishraj-hub/Fitness_Buddy.git
+cd Fitness Buddy
 ```
 
 ### 2️⃣ Set Up IBM Cloud Services
@@ -494,59 +488,6 @@ curl -X POST https://au-syd.ml.cloud.ibm.com/ml/v1/text/chat?version=2024-05-31 
     ],
     "parameters": {"max_new_tokens": 400}
   }'
-```
-
----
-
-## 🚀 Deployment
-
-### Option A — IBM Cloud Object Storage (Recommended for sharing)
-
-```bash
-# 1. Upload HTML to your COS bucket
-# IBM Cloud Dashboard → Object Storage → your bucket → Upload
-
-# 2. Enable public access on the object
-# Set ACL to "public-read"
-
-# 3. Your live URL will be:
-# https://s3.au-syd.cloud-object-storage.appdomain.cloud/YOUR-BUCKET/fitness-buddy.html
-```
-
-### Option B — GitHub Pages (Free, permanent URL)
-
-```bash
-# 1. Push to GitHub
-git init
-git add .
-git commit -m "🚀 Initial release: Fitness Buddy AI"
-git remote add origin https://github.com/YOUR_USERNAME/fitness-buddy.git
-git push -u origin main
-
-# 2. Enable GitHub Pages
-# Repo → Settings → Pages → Source: main branch → /docs folder
-# Move HTML to /docs/index.html
-
-# 3. Live at: https://YOUR_USERNAME.github.io/fitness-buddy
-```
-
-### Option C — IBM Code Engine (Production-grade)
-
-```bash
-# Build and deploy a containerized version
-ibmcloud ce project create --name fitness-buddy
-ibmcloud ce app create   --name fitness-buddy-app   --image icr.io/YOUR_NAMESPACE/fitness-buddy:latest   --port 8080
-```
-
-### ⚠️ Important: Never expose API keys in frontend code for production!
-
-For production deployment, use a backend proxy:
-
-```
-Browser → Your Backend (Node/Python) → IBM watsonx.ai API
-              ↑
-         API key stored safely
-         in environment variables
 ```
 
 ---
