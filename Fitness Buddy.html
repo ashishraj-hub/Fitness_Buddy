@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fitness Buddy</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Segoe UI',Arial,sans-serif;background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);min-height:100vh;color:#fff}
+    header{display:flex;align-items:center;gap:14px;padding:18px 28px;background:rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.1)}
+    .logo{width:44px;height:44px;background:linear-gradient(135deg,#00c6a2,#0078d4);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px}
+    header h1{font-size:20px;font-weight:600}
+    header p{font-size:12px;color:rgba(255,255,255,.5);margin-top:2px}
+    .badge{margin-left:auto;background:rgba(0,120,212,.2);border:1px solid rgba(0,120,212,.4);border-radius:20px;padding:4px 14px;font-size:12px;color:#60c6ff}
+    .hero{text-align:center;padding:52px 24px 36px}
+    .hero h2{font-size:34px;font-weight:700;background:linear-gradient(90deg,#00c6a2,#60c6ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:12px}
+    .hero p{font-size:15px;color:rgba(255,255,255,.6);max-width:460px;margin:0 auto 28px;line-height:1.6}
+    .pills{display:flex;justify-content:center;flex-wrap:wrap;gap:10px}
+    .pill{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:7px 16px;font-size:13px;color:rgba(255,255,255,.75)}
+    .hint{display:block;margin-top:16px;font-size:13px;color:#00c6a2;animation:pulse 2s ease-in-out infinite}
+    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+    footer{text-align:center;padding:20px;font-size:12px;color:rgba(255,255,255,.3)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">&#127939;</div>
+    <div>
+      <h1>Fitness Buddy</h1>
+      <p>Your AI-powered health &amp; fitness coach</p>
+    </div>
+    <div class="badge">&#9642; Powered by IBM watsonx</div>
+  </header>
+
+  <div class="hero">
+    <h2>Your Personal Fitness Coach</h2>
+    <p>Personalized home workouts, nutrition tips, and daily motivation — powered by IBM watsonx AI.</p>
+    <div class="pills">
+      <span class="pill">&#127947; Home Workouts</span>
+      <span class="pill">&#129367; Nutrition Tips</span>
+      <span class="pill">&#9889; Daily Motivation</span>
+      <span class="pill">&#127775; Habit Tracking</span>
+    </div>
+    <span class="hint">&#9660; Chat with Fitness Buddy below</span>
+  </div>
+
+  <div id="root"></div>
+
+  <footer>&copy; 2026 Fitness Buddy &nbsp;|&nbsp; IBM watsonx.ai &amp; watsonx Orchestrate</footer>
+
+  <script>
+    // ── CLEAN CONFIG — no onLoad, no identityTokenProvider ──
+    window.wxOConfiguration = {
+      orchestrationID: "444ed28d8c43486382b8fa95ea70a501_e53a3471-f734-4d2b-831c-986cc71aa83b",
+      hostURL: "https://au-syd.watson-orchestrate.cloud.ibm.com",
+      rootElementID: "root",
+      deploymentPlatform: "ibmcloud",
+      crn: "crn:v1:bluemix:public:watsonx-orchestrate:au-syd:a/444ed28d8c43486382b8fa95ea70a501:e53a3471-f734-4d2b-831c-986cc71aa83b::",
+      chatOptions: {
+        agentId: "9a497dbc-e774-4f20-a072-4c826379a0c0",
+        agentEnvironmentId: "7cd6d119-810c-4ef0-9036-92768512f6ca"
+      }
+    };
+
+    setTimeout(function(){
+      var s = document.createElement('script');
+      s.src = window.wxOConfiguration.hostURL + '/wxochat/wxoLoader.js?embed=true';
+      s.onload = function(){ wxoLoader.init(); };
+      document.head.appendChild(s);
+    }, 0);
+  </script>
+</body>
+</html>
