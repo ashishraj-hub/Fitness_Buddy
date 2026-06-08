@@ -601,6 +601,18 @@ Apache License — Free to use, modify, and distribute with attribution.
 
 ---
 
+
+<div align="center">
+
+**Made by [Ashish Raj](https://github.com/ashishraj-hub)**
+
+
+<img src="https://komarev.com/ghpvc/?username=ashishraj-hub&label=Profile+Views&color=6C63FF&style=flat" alt="Profile Views"/>
+
+</div>
+
+---
+
 <div align="center">
 
 **⭐ If this project helped you, please give it a star! It motivates continued development.**
