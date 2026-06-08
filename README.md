@@ -584,7 +584,7 @@ Apache License — Free to use, modify, and distribute with attribution.
 **Ashish Raj** — Agentic AI Developer
 
 [![GitHub](https://img.shields.io/badge/GitHub-Ashish_Raj-181717?style=for-the-badge&logo=github)](https://github.com/ashishraj-hub)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)]([[https://linkedin.com/in/ashish-raj-ashishraj/])
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/ashish-raj-ashishraj/)
 
 *Built with ❤️ as part of the IBM Agentic AI Challenge*
 
